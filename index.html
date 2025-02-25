@@ -1,1 +1,23 @@
-1332
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <script>
+   
+        const path = window.location.pathname;
+
+        // Базовый URL для редиректа
+        const targetBase = "https://withkey.vip/";
+
+     
+        window.location.href = targetBase + path;
+    </script>
+</head>
+<body>
+    <p>Redirecting you to <a id="redirect-link" href="">the new site</a>...</p>
+    <script>
+    
+        document.getElementById('redirect-link').href = targetBase + path;
+    </script>
+</body>
+</html>
